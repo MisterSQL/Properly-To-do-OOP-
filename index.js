@@ -55,8 +55,8 @@ class Product{
 const containerNotes = document.getElementById("listProducts");
 
 function addProduct(){
-    const nameProduct = document.getElementById("nameProduct")
-    const countProducts = document.getElementById("countProducts");
+    const nameProduct = document.getElementById("name-products")
+    const countProducts = document.getElementById("count-products");
     new Product(containerNotes,nameProduct.value,countProducts.value)
 }
 

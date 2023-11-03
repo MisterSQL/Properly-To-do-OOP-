@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6{
     padding: 0;
     margin: 0;
 }
-#title{
+.title{
     text-align: center;
     color: #ffff;
     padding: 1em;
@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
-#formBuy{
+.container-buy{
     width: 100%;
     padding: 1em;
     display: flex;
@@ -31,15 +31,15 @@ h1,h2,h3,h4,h5,h6{
     gap: 15px;
     margin-bottom: 2em;
 }
-#formBuy *{
+.container-buy *{
     border-radius: 5px;
     height: 35px;
 }
 
-#nameProduct{
+#name-products{
     width: 50%;
 }
-#countProducts{
+#count-products{
     width: 10%;
 }
 #addNote{
