@@ -1,17 +1,9 @@
 import {dataListProducts} from "./dataListProducts.js";
 export class Product {
-    MIN_COUNT = 1;
     constructor(product) {
-        this.name = this.defaultName(product);
-        this.count = this.defaultCount(product);
+        this.name = product.name_product;
+        this.count = product.count_products;
     }
-    defaultName(product){
-        return product.name_product !== "" ? product.name_product: "-"
-    }
-    defaultCount(product){
-        return product.count_products > 0 ? product.count_products:this.MIN_COUNT
-    }
-
     insert(parent){
         parent.append(this.createNote())
     }

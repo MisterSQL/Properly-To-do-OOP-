@@ -7,27 +7,26 @@
     <link rel="stylesheet" href="styles/index.css" type="text/css">
 </head>
 <body>
-<!--    <button  createTask()">Create new Task</button>-->
-
     <main class="box">
         <h1 class="title">Shopping List</h1>
-        <div class="box__form">
-            <input 
-                   type="text"
-                   placeholder="Title..."
-                   id="name_products"
-                   />
-            <input 
-                   type="number"
-                   value="1"
-                   inputmode="numeric"
-                   id="count_products"/>
-            <button
-                    type="button"
-                    id="addNote">
-                    Add
-            </button>
-        </div>
+            <form action="/" id="box__form" method="post">
+                <input
+                       type="text"
+                       placeholder="Title..."
+                       id="name_products"
+                       required
+                       />
+                <input
+                       type="number"
+                       min="1"
+                       value="1"
+                       inputmode="numeric"
+                       id="count_products"/>
+                <input
+                        type="submit"
+                        value="Add"
+                        class="addNote">
+            </form>
         <section id="box__listProducts"></section>
     </main>
     <script type="module" src="scripts/index.js"></script>

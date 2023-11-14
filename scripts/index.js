@@ -1,10 +1,13 @@
 import {Product} from "./Product.js";
 import {dataListProducts} from "./dataListProducts.js";
 
-const button_add  = document.getElementById("addNote")
+const form  = document.getElementById("box__form")
 const listProducts = document.getElementById("box__listProducts");
-button_add.addEventListener('click',addProduct)
-function addProduct(){
+form.addEventListener('submit', addProduct)
+
+
+function addProduct(e){
+    e.preventDefault();
     const name_product = document.getElementById("name_products").value;
     const count_products = document.getElementById("count_products").value;
     const last_size_listProducts = dataListProducts.size;

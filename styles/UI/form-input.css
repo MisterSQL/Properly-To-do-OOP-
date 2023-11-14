@@ -8,5 +8,13 @@
     background-color: var(--bg-dark);
 }
 
-
-
+.addNote{
+    width: 30%;
+    border-color: var(--clr-warn);
+    background-color: var(--bg-color);
+    color: var(--clr-warn);
+    transition: 1s;
+}
+.addNote:hover{
+    transform: scale(1.05);
+}
