@@ -1,3 +1,4 @@
+import {dataListProducts} from "./dataListProducts.js";
 export class Product {
     MIN_COUNT = 1;
     constructor(product) {
@@ -18,6 +19,7 @@ export class Product {
     createNote(){
         const note = document.createElement("div");
         note.classList.add("note")
+        note.setAttribute("data-value", this.name);
         const name_product = this.createElementHtmlName();
         const count_product = this.createElementHtmlCount();
         const container_buttons= this.createElementHtmlContainerButtons();
@@ -64,8 +66,7 @@ export class Product {
         return button_done
     }
     checkIsDone(button){
-        const container_button = button.parentElement;
-        const note = container_button.parentElement;
+        const note = document.querySelector('.note[data-value="' + this.name + '"]')
         if(button.checked){
             note.classList.add("bg-dark");
         }
@@ -74,9 +75,9 @@ export class Product {
         }
     }
     deleteNote(button){
-        const container_button = button.parentElement;
-        const note = container_button.parentElement;
-        note.remove()
+        const note = document.querySelector('.note[data-value="' + this.name + '"]');
+        dataListProducts.delete(this.name);
+        note.remove();
     }
     clickAction(element){
         const button = element.target;
