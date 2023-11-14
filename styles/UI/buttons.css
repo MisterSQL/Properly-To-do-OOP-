@@ -1,0 +1,38 @@
+.buttonsDelete{
+    color: var(--clr-warn);
+    font-size: var(--font-size);
+    border: none;
+    background: none;
+    transition: .5s;
+}
+.buttonsDelete:hover{
+    color: var(--clr-error);
+    transition: .5s;
+}
+.buttonDone{
+    width: 18px;
+    height: 18px;
+}
+
+.buttonsDelete {
+    padding: 8px;
+}
+#addNote{
+    width: 30%;
+    border-color: var(--clr-warn);
+    background-color: var(--bg-color);
+    color: var(--clr-warn);
+    transition: 1s;
+}
+#addNote:hover{
+    transform: scale(1.05);
+}
+
+.containerButtons .buttonDone{
+    margin-right: 4px;
+}
+.containerButtons{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}

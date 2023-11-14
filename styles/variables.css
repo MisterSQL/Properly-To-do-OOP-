@@ -1,0 +1,10 @@
+:root{
+    --clr-primary:white;
+    --clr-secondary: black;
+    --clr-light-black: #131618;
+    --clr-error: red;
+    --clr-warn: yellow;
+    --bg-color: black;
+    --bg-dark: #151515;
+    --font-size:18px;
+}

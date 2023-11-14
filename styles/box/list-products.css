@@ -1,0 +1,30 @@
+#box__listProducts{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+}
+
+.note{
+    width: 80%;
+    color: var(--clr-primary);
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid yellow;
+}
+
+.style_count_products{
+    background-color: yellow;
+    color: var(--clr-secondary);
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 6px;
+    margin-right: 16px;
+}
+
+.styleTextName{
+    font-size: 1.2em;
+}

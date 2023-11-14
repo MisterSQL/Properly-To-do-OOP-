@@ -1,0 +1,12 @@
+#name_products{
+    width: 50%;
+}
+#count_products{
+    width: 10%;
+}
+.bg-dark{
+    background-color: var(--bg-dark);
+}
+
+
+
