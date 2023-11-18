@@ -1,0 +1,25 @@
+.note__actions{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.actions__delete{
+    color: var(--color-warn);
+    font-size: var(--font-size);
+    border: none;
+    background: none;
+    padding-inline: 8px;
+    padding-block:8px;
+    transition: .5s;
+}
+.actions__delete:hover{
+    color: var(--color-error);
+    transition: .5s;
+}
+.actions__change_checkbox{
+    width: 18px;
+    margin-right: 4px;
+    height: 18px;
+}

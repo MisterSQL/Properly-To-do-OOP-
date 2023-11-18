@@ -1,4 +1,4 @@
-#box__form{
+.box__form{
     width: 100%;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@
     padding: 16px;
 }
 
-#box__form *{
+.box__form *{
     border-radius: 8px;
     height: 36px;
 }

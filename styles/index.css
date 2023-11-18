@@ -1,4 +1,4 @@
-@import url("basa.css");
-@import url("box/index.css");
-@import url("UI/index.css");
 @import url("variables.css");
+@import url("base.css");
+@import url("ui/index.css");
+@import url("components/index.css");

@@ -1,0 +1,17 @@
+.form__name-products{
+    width: 50%;
+}
+.form__count-products{
+    width: 10%;
+}
+
+.form__add-button{
+    width: 30%;
+    border-color: var(--color-warn);
+    background-color: var(--color-secondary);
+    color: var(--color-warn);
+    transition: .4s;
+}
+.form__add-button:hover{
+    background-color: var(--color-darker);
+}
